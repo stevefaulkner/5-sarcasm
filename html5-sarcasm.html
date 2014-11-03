@@ -2,9 +2,10 @@
 <polymer-element name="html5-sarcasm">
 <template>
 <style>
-:host {background-color:#CF9}
+:host(:before) {content:"؟";}
+:host(:after) {content:"؟";}
 </style>
-<div><content></content><sup>sarcasm</sup></div>
+<div style="display:inline"><content></content><sup>sarcasm</sup></div>
 </template>	
 <script>
 Polymer('html5-sarcasm', {
